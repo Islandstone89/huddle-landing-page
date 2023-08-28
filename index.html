@@ -5,18 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-  <title>Frontend Mentor Challenge | QR code component</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor Challenge | Huddle Landing Page</title>
 </head>
 <body>
-  
-  <main class="card">
-      <img src="images/image-qr-code.png" alt="QR code">
-      <h1 class="heading">Improve your front-end skills by building projects</h1>
-      <p class="paragraph">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-  </main><!-- end card -->
+
+  <main class="landing-page">
+
+    <div class="logo-wrapper" id="test">
+      <img src="images/logo.svg" alt="Huddle logo" class="logo">
+    </div><!-- end logo -->
+
+    <div class="main-content">
+
+      <img src="images/illustration-mockups.svg" alt="">
+
+      <div class="text">
+        <h1>Build the community your fans will love</h1>
+        <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+        Create connections with your users as you engage in genuine discussion. </p>
+        <a href="#" class="cta">Register</a>
+      </div><!-- end text -->
+    </div><!-- end main-content -->
+
+    <div class="social">
+
+    <!-- Facebook icon-->
+     <a href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="social-icon-wrap facebook"><g id="Layer_83" data-name="Layer 83">
+      <path class="social-icon" d="M35.63,52.75H26.5a.76.76,0,0,1-.75-.75V36.75H19.27a.76.76,0,0,1-.75-.75V27.83a.76.76,0,0,1,.75-.75h6.48V22.41A11.18,11.18,0,0,1,36.91,11.25h6.82a.76.76,0,0,1,.75.75v8a.75.75,0,0,1-.75.75h-4a3.91,3.91,0,0,0-3.9,3.91v2.52h8.86a.77.77,0,0,1,.59.29.74.74,0,0,1,.13.64l-2,8a.74.74,0,0,1-.72.57H36.38V52A.76.76,0,0,1,35.63,52.75Zm-8.38-1.5h7.63V36a.75.75,0,0,1,.75-.75h6.51l1.63-6.53H35.12a.75.75,0,0,1-.75-.75V24.7a5.41,5.41,0,0,1,5.4-5.41H43V12.75H36.91a9.67,9.67,0,0,0-9.66,9.66v5.42a.75.75,0,0,1-.75.75H20v6.67H26.5a.76.76,0,0,1,.75.75Z"/><path d="M32,60.75A28.75,28.75,0,1,1,60.75,32,28.79,28.79,0,0,1,32,60.75Zm0-56A27.25,27.25,0,1,0,59.25,32,27.28,27.28,0,0,0,32,4.75Z"/></g>
+      </svg>
+    </a>
+
+    <!-- Twitter icon-->
+    <a href="#">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-icon-wrap twitter">
+        <path  class="social-icon"d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0ZM23.3316 20.338L23.2812 19.5075C23.1301 17.3551 24.4563 15.3891 26.5548 14.6265C27.327 14.3553 28.6364 14.3214 29.4926 14.5587C29.8283 14.6604 30.4663 14.9993 30.9195 15.3044L31.7421 15.8637L32.6486 15.5756C33.1523 15.423 33.8238 15.1688 34.1259 14.9993C34.4113 14.8468 34.6631 14.762 34.6631 14.8129C34.6631 15.101 34.042 16.084 33.5216 16.6263C32.8165 17.389 33.018 17.4568 34.4449 16.9483C35.3011 16.6602 35.3178 16.6602 35.15 16.9822C35.0492 17.1517 34.5288 17.7449 33.9748 18.2872C33.0347 19.2194 32.9844 19.3211 32.9844 20.1007C32.9844 21.304 32.4136 23.8123 31.8428 25.1851C30.7852 27.7612 28.5189 30.422 26.2526 31.7609C23.063 33.6422 18.8157 34.1167 15.24 33.0151C14.0481 32.6422 12 31.6931 12 31.5237C12 31.4728 12.6211 31.405 13.3766 31.3881C14.9546 31.3542 16.5326 30.9135 17.8756 30.1339L18.7822 29.5916L17.7413 29.2357C16.264 28.7272 14.9378 27.5578 14.6021 26.4562C14.5013 26.1003 14.5349 26.0833 15.475 26.0833L16.4487 26.0664L15.6261 25.6766C14.6524 25.1851 13.7627 24.3546 13.3262 23.5072C13.0072 22.8971 12.6044 21.3548 12.7219 21.2362C12.7554 21.1854 13.108 21.287 13.5109 21.4226C14.6692 21.8463 14.8203 21.7446 14.1488 21.0328C12.8897 19.7448 12.5036 17.8296 13.108 16.0162L13.3934 15.2027L14.5013 16.3043C16.7677 18.5245 19.4369 19.8465 22.4922 20.2363L23.3316 20.338Z"/>
+      </svg>
+    </a>
+      
+      <!-- Instagram icon-->
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="social-icon-wrap instagram"><g id="Layer_8" data-name="Layer 8">
+          <path class="social-icon" d="M45.42,12.9H18.58a5.69,5.69,0,0,0-5.68,5.68V45.42a5.69,5.69,0,0,0,5.68,5.68H45.42a5.69,5.69,0,0,0,5.68-5.68V18.58A5.69,5.69,0,0,0,45.42,12.9ZM49.6,45.42a4.18,4.18,0,0,1-4.18,4.18H18.58a4.18,4.18,0,0,1-4.18-4.18V18.58a4.18,4.18,0,0,1,4.18-4.18H45.42a4.18,4.18,0,0,1,4.18,4.18Z"/><path d="M32,23.48A8.52,8.52,0,1,0,40.52,32,8.53,8.53,0,0,0,32,23.48ZM32,39a7,7,0,1,1,7-7A7,7,0,0,1,32,39Z"/><path d="M43.3,20.28A.75.75,0,1,0,43,21.72a.72.72,0,0,0,.29-.06.78.78,0,0,0,.24-.16.75.75,0,0,0,0-1.06A.63.63,0,0,0,43.3,20.28Z"/><path d="M32,60.75A28.75,28.75,0,1,1,60.75,32,28.79,28.79,0,0,1,32,60.75Zm0-56A27.25,27.25,0,1,0,59.25,32,27.28,27.28,0,0,0,32,4.75Z"/></g>
+        </svg>
+      </a>
+
+    </div><!-- end social -->
+  </main><!-- ned landing-page -->
 
 </body>
 </html>
