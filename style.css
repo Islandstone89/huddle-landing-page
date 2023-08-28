@@ -72,7 +72,7 @@ main {
 
 .main-content {
     display: grid;
-    grid-gap: 3rem;
+    grid-gap: 4rem;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 
 }
@@ -93,6 +93,13 @@ main {
     border-radius: 20px;
     width: 12rem;
     padding: .5rem 2rem;
+    box-shadow: 1px 1px rgba(0,0,0, .8);
+}
+
+.cta:hover {
+    background-color: var(--clr--soft-magenta);
+    color: var(--clr--white);
+    transition: .2s ease;
 }
 
 @media (min-width: 800px) {
@@ -117,6 +124,11 @@ main {
 .social-icon-wrap {
    width: 3rem;
    fill: var(--clr--white);
+}
+
+.social-icon-wrap:hover {
+    fill: var(--clr--soft-magenta);
+    transform: .2s ease;
 }
 
 
